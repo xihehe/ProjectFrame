@@ -1,4 +1,4 @@
-package com.yumeng.libbaseProject.activity
+package com.yumeng.libcommonview.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
