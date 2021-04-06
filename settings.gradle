@@ -1,0 +1,2 @@
+include ':app', ':lib_common', ':lib_common_view', ':lib_common_view', ':lib_net', ':lib_base', ':lib_Autonomous',':lib_emoji',"lib_websocket"
+rootProject.name='ProjectFrame'

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.yumeng.libcommonview.view.OneKeyClearEditText
+        android:id="@+id/etContent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/white"
+        android:layout_height="50dp"/>
+</LinearLayout>

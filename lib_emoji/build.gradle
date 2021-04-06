@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+afterEvaluate {
+  generateReleaseBuildConfig.enabled = false
+}
+
+android {
+  compileSdkVersion compile_sdk_version
+
+
+  defaultConfig {
+    minSdkVersion rootProject.ext.min_sdk_version
+    targetSdkVersion rootProject.ext.compile_sdk_version
+
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  resourcePrefix 'emoji'
+}
+
+dependencies {
+  implementation "androidx.appcompat:appcompat:1.1.0-rc01"
+  implementation "androidx.cardview:cardview:1.0.0"
+}
+
+

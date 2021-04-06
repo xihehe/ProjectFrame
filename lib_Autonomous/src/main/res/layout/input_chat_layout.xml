@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <!--拍照、图片、语音-->
+        <LinearLayout
+            android:id="@+id/other_items"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/ivChatMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/ic_chat_more_20dp" />
+
+            <ImageView
+                android:id="@+id/ivChatCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/camera_icon" />
+
+            <ImageView
+                android:id="@+id/ivChatAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/album_icon" />
+
+            <com.yumeng.libbaseProject.view.audioRecorder.AudioRecorderButton
+                android:id="@+id/btnAudioRecord"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/mic_icon" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivShowOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/black_right_icon" />
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_chat_edit"
+            android:minHeight="33dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fl_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.vanniktech.emoji.EmojiEditText
+                    android:id="@+id/chatInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp_15"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingEnd="@dimen/dp_15"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/chatEmoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="6dp"
+                android:src="@drawable/selector_emoji" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/dp_10"
+            android:src="@mipmap/chat_send_icon" />
+
+        <ImageView
+            android:id="@+id/viewLine"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:src="@mipmap/chat_send_icon"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNoInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_30"
+        android:paddingTop="5dp"
+        android:paddingEnd="@dimen/dp_15"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_chat_edit"
+            android:minHeight="33dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingEnd="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_8"
+                android:text="@string/silenced"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:textSize="@dimen/sp_15" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:src="@mipmap/chat_send_icon" />
+    </LinearLayout>
+
+
+    <com.yumeng.libbaseProject.view.KeyboardHeightFrameLayout
+        android:id="@+id/emotionContainerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_custom_keyboard_size"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <com.yumeng.libbaseProject.view.emoji.MyEmojiView
+            android:id="@+id/evMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </com.yumeng.libbaseProject.view.KeyboardHeightFrameLayout>
+
+    <com.yumeng.libbaseProject.view.KeyboardHeightFrameLayout
+        android:id="@+id/extContainerContainerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_custom_keyboard_size"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <com.yumeng.aillo.common.widget.ChatMore
+            android:id="@+id/chatMore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </com.yumeng.libbaseProject.view.KeyboardHeightFrameLayout>
+</LinearLayout>

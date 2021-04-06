@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_lib_common_16">16dp</dimen>
+    <dimen name="dp_lib_common_10">10dp</dimen>
+
+    <dimen name="dp_23">23dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="sp_lib_common_14">14sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_lib_common_16">16sp</dimen>
+
+    <dimen name="dialog_password_input_height">56dp</dimen>
+    <dimen name="dialog_password_input_width">230dp</dimen>
+
+    <dimen name="btn_radius">2dp</dimen>
+    <dimen name="btn_radius_half">1dp</dimen>
+    <dimen name="bar_height">48dp</dimen>
+    <dimen name="btn_height">32dp</dimen>
+    <dimen name="margin_text">8dp</dimen>
+    <dimen name="margin_layout">16dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="big_image_size">74dp</dimen>
+    <dimen name="min_button_width">52dp</dimen>
+
+    <dimen name="middle_text_size">17sp</dimen>
+    <dimen name="small_text_size">15sp</dimen>
+    <dimen name="mini_text_size">13sp</dimen>
+
+
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_135">135dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_52">52dp</dimen>
+    <dimen name="dp_54">54dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_9">9dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_110">110dp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="dp_42">42dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_96">96dp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_26">26sp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="search_icon_padding">12dp</dimen>
+    <dimen name="search_view_text_padding">65dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+
+    <!--keyboard-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="indicator_margin">10dp</dimen>
+    <dimen name="bar_tool_btn_width">56dp</dimen>
+    <dimen name="verticalspit_view_width">0.6dp</dimen>
+    <dimen name="horizontalspit_view_height">0.6dp</dimen>
+    <dimen name="item_emoticon_size_default">32dp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="friend_info_item_height">51dp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="manager_group_height">58dp</dimen>
+    <dimen name="account_setting_height">54dp</dimen>
+    <dimen name="item_favorite_chat_text_size">12sp</dimen>
+    <dimen name="item_favorite_margin_bottom">8dp</dimen>
+
+    <dimen name="media_grid_size">48dp</dimen>
+    <dimen name="media_grid_spacing">4dp</dimen>
+
+    <dimen name="album_item_height">72dp</dimen>
+    <dimen name="design_bottom_navigation_margin">5dp</dimen>
+    <dimen name="common_chat_interval">5dp</dimen>
+
+    <dimen name="default_indexBar_textSize">14sp</dimen>
+
+    <dimen name="default_indexBar_textSpace">4dp</dimen>
+    <dimen name="default_indexBar_selectBgR">6dp</dimen>
+    <dimen name="default_indexBar_layout_width">24dp</dimen>
+
+    <dimen name="min_keyboard_size">50dp</dimen>
+    <dimen name="default_custom_keyboard_size">220dp</dimen>
+    <dimen name="min_custom_keyboard_size">110dp</dimen>
+    <dimen name="min_custom_keyboard_top_margin">170dp</dimen>
+    <dimen name="common_height">57dp</dimen>
+    <dimen name="switch_normal_width">40dp</dimen>
+</resources>

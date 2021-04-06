@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:divider="@drawable/divider_vertical"
+              android:orientation="vertical"
+              android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/tvOpenCamera"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="@string/turn_on_camera"
+        android:textSize="@dimen/sp_lib_common_16"/>
+
+    <TextView
+        android:id="@+id/tvOpenAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="@string/open_album"
+        android:textSize="@dimen/sp_lib_common_16"/>
+</LinearLayout>

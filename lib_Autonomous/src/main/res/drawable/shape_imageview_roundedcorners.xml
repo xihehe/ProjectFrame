@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 拍证件照那边用到 10%透明度-->
+    <solid android:color="#1A54d0ac"/>
+    <corners android:radius="@dimen/dp_10"/>
+
+</shape>

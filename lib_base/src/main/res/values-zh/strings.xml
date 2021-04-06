@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Common</string>
+    <string name="region_country">国家/地区</string>
+    <string name="background">背景</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="clear_the_cache_or_not">是否清空缓存</string>
+    <string name="again_according_to_exit_the_program">再按一次退出程序</string>
+    <string name="downloading">下载中&#8230;</string>
+    <string name="no_app_installed_to_open_this_file">尚未安装可以打开该文件的应用</string>
+    <string name="submit">提交</string>
+    <string name="complaints">投诉</string>
+    <string name="text_collection">收藏</string>
+    <string name="select">请选择</string>
+    <string name="please_enter_the_password">请输入密码</string>
+    <string name="turn_on_camera">打开相机</string>
+    <string name="turn_on_sdcard">打开内部存储</string>
+    <string name="open_album">打开相册</string>
+    <string name="whatsapp_is_not_installed">未安装WhatsApp</string>
+    <string name="wechat_is_not_installed">未安装微信</string>
+    <string name="open_the_file_failure_reason_file_has_been_removed">打开失败，原因：文件已经被删除</string>
+    <string name="search">搜索</string>
+
+    <string name="str_none" />
+    <string name="loading">Loading…</string>
+    <string name="load_failed">Load failed. click to retry!</string>
+    <string name="load_failed_no_network">Oops, network is lost!  click to retry</string>
+    <string name="empty">Empty!</string>
+    <string name="done">完成</string>
+    <string name="album_name_all">全部</string>
+
+    <string name="error_over_count_default">您已经达到最大选择数量</string>
+    <string name="error_over_count">最多只能选择 %1$d 个文件</string>
+    <string name="error_under_quality">图片质量太低</string>
+    <string name="error_over_quality">图片质量太高</string>
+    <string name="error_file_type">不支持的文件类型</string>
+    <string name="error_type_conflict">不能同时选择图片和视频</string>
+    <string name="error_no_video_activity">没有支持视频预览的应用</string>
+    <string name="video_length_exceeds_limit">视频长度超出限制</string>
+    <string name="please_use_normal_chat">视频大小超出限制，请使用普通聊天</string>
+    <string name="button_original">原图</string>
+    <string name="error_over_original_count">"有 %1$d 张照片大于 %2$d M\n无法上传，将取消勾选原图"</string>
+    <string name="error_over_original_size">"该照片大于 %1$d M，无法上传将取消勾选原图"</string>
+    <string name="verification_failed">校验失败</string>
+
+    <string name="send">发送</string>
+    <string name="send_apply">发送(%1$d)</string>
+    <string name="select_image">选择图片</string>
+    <string name="avatar_editing">头像编辑</string>
+    <string name="unable_to_retrieve_selected_image">无法检索选定的图片</string>
+    <string name="scan_it">扫一扫</string>
+    <string name="album">相册</string>
+    <string name="no_qr_code_detected">未检测到二维码</string>
+    <string name="tap_to_turn_light_on">轻触照亮</string>
+    <string name="not_recognized">无法识别</string>
+    <string name="photo_grid_capture">拍一张</string>
+</resources>

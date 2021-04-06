@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_lib_common_16">16dp</dimen>
+    <dimen name="dp_lib_common_10">10dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_23">23dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="sp_lib_common_14">14sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_lib_common_16">16sp</dimen>
+
+    <dimen name="dialog_password_input_height">56dp</dimen>
+    <dimen name="dialog_password_input_width">230dp</dimen>
+</resources>

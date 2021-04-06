@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yumeng.libcommonview.view.BubbleImageView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:bubble_angle="0dp"
+        app:bubble_showShadow="false"
+        app:bubble_showText="false" />
+
+
+    <com.yumeng.libcommonview.view.progress.CircleProgressView
+        android:id="@+id/progressView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:cpv_autoTextSize="true"
+        app:cpv_barColor="@color/white"
+        app:cpv_barWidth="2dp"
+        app:cpv_innerContourSize="0dp"
+        app:cpv_maxValue="100"
+        app:cpv_outerContourSize="0dp"
+        app:cpv_rimColor="@color/black"
+        app:cpv_rimWidth="2dp"
+        app:cpv_seekMode="false"
+        app:cpv_showUnit="false"
+        app:cpv_spinColor="@color/white"
+        app:cpv_textColor="@color/white"
+        app:cpv_textScale="1"
+        app:cpv_unitColor="@color/white"
+        app:cpv_unitPosition="right_bottom"
+        app:cpv_unitScale="1"
+        app:cpv_value="0" />
+
+</FrameLayout>

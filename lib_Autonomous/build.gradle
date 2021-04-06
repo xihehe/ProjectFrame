@@ -1,0 +1,130 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+String devUrl = "192.168.1.236:22002/"// 测试url
+String alphaUrl = "test.tlifang.com/news/app"// 发布测试使用
+String gaUrl = "192.168.1.95:22002"// 正式环境
+
+android {
+    compileSdkVersion compile_sdk_version
+//    sourceSets.main {
+//        jniLibs.srcDir 'libs'
+//        jni.srcDirs = [] //disable automatic ndk-build call
+//        res.srcDirs = ['src/main/res', 'src/main/res-blue']
+//    }
+    defaultConfig {
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+        versionCode version_code
+        versionName version_name
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    flavorDimensions "versionCode"
+    productFlavors {
+
+        dev {
+            buildConfigField "String", "BASE_URL", "\"http://$devUrl:8001\""//基本内测
+            buildConfigField "String", "GroupUrl", "\"http://$devUrl:8006\""//群聊内测
+            buildConfigField "String", "FriendUrl", "\"http://$devUrl:8003\""//好友内测
+            buildConfigField "String", "RTCUrl", "\"http://$devUrl:8005\""//rtc push内测
+            buildConfigField "String", "SOCKETUrl", "\"ws://$devUrl:8005/ws\""//socket内测
+            buildConfigField "String", "ChatUrl", "\"http://$devUrl:8002\""//单聊内测
+            buildConfigField "String", "MpushUrl", "\"http://$devUrl:9999\""//mpush内测
+//            buildConfigField "String", "FileUrl", '"https://newfile.aillo.cc/storage"'//文件上传下载
+            buildConfigField "String", "FileUrl", '"https://test-storage-gcp.tcloudapp.com/storage/v2/file"'//文件上传下载
+            buildConfigField "String", "AccessKey", '"aillo_test_a_k"'
+            buildConfigField "String", "SecretKey", '"aillo_test_s_k"'
+            buildConfigField "String", "userIdValue" , '"1111435842045702146"'
+            buildConfigField "String", "ArticleUrl", "\"http://$devUrl:8008/mobile\""//文章相关内侧
+
+            buildConfigField "String", "SINGLE_URL", "\"http://$devUrl:8084\""//single
+            buildConfigField "String", "GROUP_URL", "\"http://$devUrl:8086\""//group
+            buildConfigField "String", "FRIEND_URL", "\"http://$devUrl:8083\""//friend
+            buildConfigField "String", "LOGIN_URL", "\"http://$devUrl:8081\""//login
+
+            buildConfigField "String", "COMMON_SOCKET_URL", "\"ws://$devUrl:8002/appws\""//新增websocket
+            buildConfigField "String", "FEED", "\"http://$devUrl:8087/feed\""//动态 内网
+
+
+        }
+
+        alpha {
+            buildConfigField "String", "BASE_URL", "\"http://$alphaUrl/user_netty\""//8001基本内测
+            buildConfigField "String", "GroupUrl", "\"http://$alphaUrl/group_netty\""//8006群聊内测
+            buildConfigField "String", "FriendUrl", "\"http://$alphaUrl/friend_netty\""//8003好友内测
+            buildConfigField "String", "RTCUrl", "\"http://$alphaUrl/rtc_netty\""//8005rtc push内测
+            buildConfigField "String", "SOCKETUrl", "\"ws://$alphaUrl/rtc_ws/ws\""//8005socket内测
+            buildConfigField "String", "ChatUrl", "\"http://$alphaUrl/single_netty\""//8002单聊内测
+            buildConfigField "String", "MpushUrl", "\"http://$alphaUrl/mpush\""//9999mpush内测
+//            buildConfigField "String", "FileUrl", '"https://newfile.aillo.cc/storage"'//文件上传下载
+            buildConfigField "String", "FileUrl", '"https://test-storage-gcp.tcloudapp.com/storage/v2/file"'//文件上传下载
+//            buildConfigField "String", "FileUrl", '"http://34.92.195.22/storage"'//文件上传下载
+            buildConfigField "String", "AccessKey", '"aillo_test_a_k"'
+            buildConfigField "String", "SecretKey", '"aillo_test_s_k"'
+            buildConfigField "String", "userIdValue" , '"1111435842045702146"'
+            buildConfigField "String", "ArticleUrl", "\"http://$alphaUrl:8008/mobile\""//文章相关内侧
+            buildConfigField "String", "SINGLE_URL", "\"http://$alphaUrl/single\""//8084single
+            buildConfigField "String", "GROUP_URL", "\"http://$alphaUrl/group\""//8086group
+            buildConfigField "String", "FRIEND_URL", "\"http://$alphaUrl/friend\""//8083friend
+            buildConfigField "String", "LOGIN_URL", "\"http://$alphaUrl/login\""//8081login
+            buildConfigField "String", "COMMON_SOCKET_URL", "\"ws://$alphaUrl/appws\""////新增websocket 8002
+            buildConfigField "String", "FEED", "\"http://$alphaUrl/feed/feed\""//动态 内网
+        }
+
+        ga {
+            buildConfigField "String", "BASE_URL", "\"https://$gaUrl/user_netty\""//8001基本内测
+            buildConfigField "String", "GroupUrl", "\"https://$gaUrl/group_netty\""//8006群聊内测
+            buildConfigField "String", "FriendUrl", "\"https://$gaUrl/friend_netty\""//8003好友内测
+            buildConfigField "String", "RTCUrl", "\"https://$gaUrl/rtc_netty\""//8005rtc push内测
+            buildConfigField "String", "SOCKETUrl", "\"wss://$gaUrl/rtc_ws/ws\""//8005socket内测
+            buildConfigField "String", "ChatUrl", "\"https://$gaUrl/single_netty\""//8002单聊内测
+            buildConfigField "String", "MpushUrl", "\"https://$gaUrl/mpush\""//9999mpush内测
+//            buildConfigField "String", "FileUrl", '"https://newfile.aillo.cc/storage"'//文件上传下载
+            buildConfigField "String", "FileUrl", '"https://storage.tcloudapp.com/storage/file"'//文件上传下载
+//            buildConfigField "String", "FileUrl", '"http://34.92.195.22/storage"'//文件上传下载
+            buildConfigField "String", "AccessKey", '"O9tm1ldjSW"'
+            buildConfigField "String", "SecretKey", '"nF7Aq8WXLzJF"'
+            buildConfigField "String", "userIdValue" , '"1261225935575814145"'
+            buildConfigField "String", "ArticleUrl", "\"https://$gaUrl:8008/mobile\""//文章相关内侧
+            buildConfigField "String", "SINGLE_URL", "\"https://$gaUrl/single\""//8084single
+            buildConfigField "String", "GROUP_URL", "\"https://$gaUrl/group\""//8086group
+            buildConfigField "String", "FRIEND_URL", "\"https://$gaUrl/friend\""//8083friend
+            buildConfigField "String", "LOGIN_URL", "\"https://$gaUrl/login\""//8081login
+            buildConfigField "String", "COMMON_SOCKET_URL", "\"wss://$gaUrl/appws\""////新增websocket 8002
+            buildConfigField "String", "FEED", "\"https://$gaUrl/feed/feed\""//动态 内网
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation "com.sankuai.waimai.router:router:${wmrouter_version}"
+    kapt "com.sankuai.waimai.router:compiler:${wmrouter_version}"
+    api val.lib_base
+}

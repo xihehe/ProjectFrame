@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="default_indexBar_textSize">14sp</dimen>
+    <dimen name="default_indexBar_textSpace">4dp</dimen>
+    <dimen name="default_indexBar_selectBgR">6dp</dimen>
+    <dimen name="default_indexBar_layout_width">24dp</dimen>
+</resources>

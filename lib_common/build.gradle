@@ -1,0 +1,155 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'android-aspectjx'
+
+android {
+    compileSdkVersion compile_sdk_version
+
+    defaultConfig {
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+        versionCode version_code
+        versionName version_name
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+//    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    api val.kotlin_stdlib
+    api val.androidxCoreKtx
+    api val.constraintlayout
+    api val.appcompat
+
+    api val.material
+//    api 'me.jessyan:autosize:1.1.2'
+    api val.circleimageview
+    api val.XTabLayout
+    api val.GSYVideoPlayer
+    api val.materialishProgress
+    api val.glide
+    api val.glideAnnotations
+    kapt val.glideCompiler
+    api val.glideOkhttp3
+
+    api val.picasso
+
+    api val.eventbus
+    api val.richtext
+
+    //对话框
+    api val.dialogsCore
+    api val.dialogsInput
+
+    //android4.4以上沉浸式状态栏和导航栏实现以及Bar的其他管理
+    // 基础依赖包，必须要依赖
+    api val.immersionbar
+    // fragment快速实现（可选）
+    api val.immersionbarComponents
+    // kotlin扩展（可选）
+    api val.immersionbarKtx
+
+    api val.skeleton
+    api val.shimmerlayout
+    api val.ExpandableTextView
+    api files('libs/commons-codec-1.13.jar')//deCode
+    api val.ucrop
+
+    api val.ktxCoroutinesCore
+    api val.loggingInterceptor
+    api val.retrofit
+    api val.retrofitGson
+
+    //RxJava
+    api val.rxjava
+    api val.rxjavaRxandroid
+    //Retrofit2
+    api val.retrofitConverters
+    api val.retrofitAdapter
+
+
+    api val.PersistentCookieJar
+    api val.BaseRecyclerViewAdapterHelper
+    api val.fastjson
+
+    api val.litepalKtx
+    api val.litepal
+
+    //权限
+    api val.PermissionsKt
+
+    //lifecycle
+    api val.lifecycleViewMode
+    api val.lifecycleExtensions
+    api val.recyclerview
+
+    //联系人拼音排序
+    api val.jpinyin
+
+    api val.PickerView
+    api val.wheelview
+
+
+    api val.skinSupport
+    // skin-support
+    api val.skinAppCompat
+    // skin-support 基础控件支持
+    api val.skinDesign
+    // skin-support-design material design 控件支持[可选]
+    api val.skinCardView
+    // skin-support-cardview CardView 控件支持[可选]
+    api val.skinConstraintLayout
+    // skin-support-constraint-layout ConstraintLayout 控件支持[可选]
+
+    api val.imagezoom
+    api val.Zxing
+
+    api  val.googleMapService
+    api  val.googleMapLocation
+    api val.places
+
+    api val.stream
+    api files('libs/pinyin4j-2.5.0.jar')
+
+    api val.badgeview
+    annotationProcessor val.badgeviewCompiler
+
+    api val.signalProtocol
+
+    api val.workRuntime
+
+    api val.androidXmultidex
+}

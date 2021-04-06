@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lib_common_view</string>
+    <string name="button_ok">OK</string>
+    <string name="search">搜索</string>
+</resources>

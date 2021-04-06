@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_item_edit"
+        android:title="@string/edit"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_search"
+        android:icon="@drawable/ic_search_black"
+        android:title="@string/search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_add"
+        android:icon="@drawable/ic_plus_black"
+        android:title="@string/add"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/action_menu_main_group"
+                android:orderInCategory="1"
+                android:title="@string/start_group_chat"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_menu_main_contact"
+                android:orderInCategory="2"
+                android:title="@string/add_friend"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_menu_main_scan"
+                android:orderInCategory="3"
+                android:title="@string/scan_it"
+                app:showAsAction="never" />
+            
+            <item
+                android:id="@+id/action_menu_main_crypto"
+                android:orderInCategory="4"
+                android:title="@string/new_secret_chat"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_menu_main_crypto_group"
+                android:orderInCategory="4"
+                android:title="@string/new_secret_group_chat"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+</menu>

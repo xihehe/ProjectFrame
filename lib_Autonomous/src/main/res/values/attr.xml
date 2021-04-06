@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="rightPadding" format="dimension"></attr>
+
+
+    <!-- *公共属性* -->
+    <!--圆形-->
+    <attr name="round_as_circle" format="boolean" />
+    <!--全部圆角半径-->
+    <attr name="round_corner" format="integer|dimension" />
+    <!--针对各个角的半径-->
+    <attr name="round_corner_top_left" format="integer|dimension" />
+    <attr name="round_corner_top_right" format="integer|dimension" />
+    <attr name="round_corner_bottom_left" format="integer|dimension" />
+    <attr name="round_corner_bottom_right" format="integer|dimension" />
+
+    <!--描边颜色／半径-->
+    <attr name="stroke_color" format="color|reference" />
+    <attr name="stroke_width" format="integer|dimension" />
+
+    <!-- 是否剪裁 RCLayout 的背景 -->
+    <attr name="clip_background" format="boolean" />
+
+    <!--真正用于解析的属性-->
+    <declare-styleable name="RCAttrs">
+        <attr name="round_as_circle" />
+        <attr name="round_corner" />
+        <attr name="round_corner_top_left" />
+        <attr name="round_corner_top_right" />
+        <attr name="round_corner_bottom_left" />
+        <attr name="round_corner_bottom_right" />
+        <attr name="stroke_color" />
+        <attr name="stroke_width" />
+        <attr name="clip_background" />
+    </declare-styleable>
+
+    <!--假体：用于提示-->
+    <declare-styleable name="RCRelativeLayout">
+        <attr name="round_as_circle" />
+        <attr name="round_corner" />
+        <attr name="round_corner_top_left" />
+        <attr name="round_corner_top_right" />
+        <attr name="round_corner_bottom_left" />
+        <attr name="round_corner_bottom_right" />
+        <attr name="stroke_color" />
+        <attr name="stroke_width" />
+        <attr name="clip_background" />
+    </declare-styleable>
+
+    <!--假体：用于提示-->
+    <declare-styleable name="RCImageView">
+        <attr name="round_as_circle" />
+        <attr name="round_corner" />
+        <attr name="round_corner_top_left" />
+        <attr name="round_corner_top_right" />
+        <attr name="round_corner_bottom_left" />
+        <attr name="round_corner_bottom_right" />
+        <attr name="stroke_color" />
+        <attr name="stroke_width" />
+        <attr name="clip_background" />
+    </declare-styleable>
+
+    <declare-styleable name="OneKeyClearEditText">
+        <attr name="clearDrawableColor" format="color|reference"/>
+        <attr name="clearDrawableWidth" format="dimension"/>
+        <attr name="clearDrawableHeight" format="dimension"/>
+        <attr name="clearDrawableFollow" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="LinearProgressView">
+        <attr name="progressViewBackgroundColor" format="color|reference"/>
+        <attr name="primaryColor" format="color|reference"/>
+        <attr name="secondaryColor" format="color|reference"/>
+        <attr name="tertiaryColor" format="color|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSearchView">
+        <attr name="searchBackground" format="integer" />
+        <attr name="searchVoiceIcon" format="integer" />
+        <attr name="searchCloseIcon" format="integer" />
+        <attr name="searchBackIcon" format="integer" />
+        <attr name="searchSuggestionIcon" format="integer" />
+        <attr name="searchSuggestionBackground" format="integer" />
+        <attr name="android:hint" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+<!--    <declare-styleable name="voiceView">-->
+<!--        &lt;!&ndash;中间线的颜色，就是波形的时候，大家可以看到，中间有一条直线，就是那个&ndash;&gt;-->
+<!--        <attr name="middleLine" format="color" />-->
+<!--        &lt;!&ndash;中间线的高度，因为宽度是充满的&ndash;&gt;-->
+<!--        <attr name="middleLineHeight" format="dimension" />-->
+<!--        &lt;!&ndash;波动的线的颜色，如果是矩形样式的话，刚是矩形的颜色&ndash;&gt;-->
+<!--        <attr name="voiceLine" format="color" />-->
+<!--        &lt;!&ndash;波动线的横向移动速度，线的速度的反比，即这个值越小，线横向移动越快，越大线移动越慢，默认90&ndash;&gt;-->
+<!--        <attr name="lineSpeed" format="integer" />-->
+<!--        &lt;!&ndash;矩形的宽度&ndash;&gt;-->
+<!--        <attr name="rectWidth" format="dimension" />-->
+<!--        &lt;!&ndash;矩形之间的间隔&ndash;&gt;-->
+<!--        <attr name="rectSpace" format="dimension" />-->
+<!--        &lt;!&ndash;矩形的初始高度，就是没有声音的时候，矩形的高度&ndash;&gt;-->
+<!--        <attr name="rectInitHeight" format="dimension" />-->
+<!--        &lt;!&ndash;所输入音量的最大值&ndash;&gt;-->
+<!--        <attr name="maxVolume" format="float" />-->
+<!--        &lt;!&ndash;控件的样式，一共有两种，波形或者矩形&ndash;&gt;-->
+<!--        <attr name="viewMode">-->
+<!--            <enum name="line" value="0" />-->
+<!--            <enum name="rect" value="1" />-->
+<!--        </attr>-->
+<!--        &lt;!&ndash;灵敏度，默认值是4&ndash;&gt;-->
+<!--        <attr name="sensibility">-->
+<!--            <enum name="one" value="1" />-->
+<!--            <enum name="two" value="2" />-->
+<!--            <enum name="three" value="3" />-->
+<!--            <enum name="four" value="4" />-->
+<!--            <enum name="five" value="5" />-->
+<!--        </attr>-->
+<!--        &lt;!&ndash;精细度，绘制曲线的时候，每几个像素绘制一次，默认是1，一般，这个值越小，曲线越顺滑，-->
+<!--            但在一些旧手机上，会出现帧率过低的情况，可以把这个值调大一点，在图片的顺滑度与帧率之间做一个取舍&ndash;&gt;-->
+<!--        <attr name="fineness">-->
+<!--            <enum name="one" value="1" />-->
+<!--            <enum name="two" value="2" />-->
+<!--            <enum name="three" value="3" />-->
+<!--        </attr>-->
+<!--    </declare-styleable>-->
+
+
+    <declare-styleable name="WaveView">
+        <attr name="waveColor" format="color"/>
+        <attr name="baseColor" format="color"/>
+        <attr name="maxValue" format="integer"/>
+        <attr name="waveStokeWidth" format="dimension"/>
+        <attr name="invalidateTime" format="integer"/>
+        <attr name="space" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CameraView">
+        <attr name="camera" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="WordsNavigation">
+        <attr name="isNormal" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="BubbleImageView">
+        <attr name="bubble_arrowTop" format="dimension|reference" />
+        <attr name="bubble_arrowWidth" format="dimension|reference" />
+        <attr name="bubble_arrowHeight" format="dimension|reference" />
+        <attr name="bubble_arrowOffset" format="dimension|reference" />
+        <attr name="bubble_angle" format="dimension|reference" />
+        <attr name="bubble_arrowLocation" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="bubble_showText" format="boolean" />
+        <attr name="bubble_showShadow" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="IndexableRecyclerView">
+        <attr name="indexBar_selectedTextColor" format="color" />
+        <attr name="indexBar_selectedBgColor" format="color" />
+        <attr name="indexBar_selectedBgRadius" format="dimension" />
+        <attr name="indexBar_textColor" format="color" />
+        <attr name="indexBar_textSize" format="dimension" />
+        <attr name="indexBar_textSpace" format="dimension" />
+        <attr name="indexBar_background" format="reference|color" />
+        <attr name="indexBar_layout_width" format="dimension">
+            <!--<enum name="wrap_content" value="-2" /> 暂不支持 -->
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Common</string>
+    <string name="region_country">Country/Region</string>
+    <string name="background">Background</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_the_cache_or_not">Clear the cache ?</string>
+    <string name="again_according_to_exit_the_program">Again according to exit the program</string>
+    <string name="downloading">Downloading&#8230;</string>
+    <string name="no_app_installed_to_open_this_file">No app installed to open this file</string>
+    <string name="submit">Submit</string>
+    <string name="complaints">Complaints</string>
+    <string name="text_collection">Collection</string>
+    <string name="select">please select</string>
+    <string name="please_enter_the_password">Please enter the password</string>
+    <string name="turn_on_camera">Turn on camera</string>
+    <string name="turn_on_sdcard">Open SDCard</string>
+    <string name="open_album">Open album</string>
+    <string name="whatsapp_is_not_installed">WhatsApp is not installed</string>
+    <string name="wechat_is_not_installed">Wechat is not installed</string>
+    <string name="open_the_file_failure_reason_file_has_been_removed">Open the file failure.Reason\t:\tFile has been removed</string>
+    <string name="search">Search</string>
+
+    <string name="str_none" />
+    <string name="loading">Loading…</string>
+    <string name="load_failed">Load failed. click to retry!</string>
+    <string name="load_failed_no_network">Oops, network is lost!  click to retry</string>
+    <string name="empty">Empty!</string>
+    <string name="done">Done</string>
+    <string name="album_name_all">All</string>
+
+    <string name="error_over_count_default">You have reached max selectable</string>
+    <string name="error_over_count">You can only select up to %1$d media files</string>
+    <string name="error_under_quality">Under quality</string>
+    <string name="error_over_quality">Over quality</string>
+    <string name="error_file_type">Unsupported file type</string>
+    <string name="error_type_conflict">Can\'t select images and videos at the same time</string>
+    <string name="error_no_video_activity">No App found supporting video preview</string>
+    <string name="video_length_exceeds_limit">Video length exceeds limit</string>
+    <string name="please_use_normal_chat">Video size exceeds limit, please use normal chat</string>
+    <string name="button_original">Original</string>
+    <string name="error_over_original_count">%1$d images over %2$d MB. Original will be unchecked</string>
+    <string name="error_over_original_size">Can\'t select the images larger than %1$d MB</string>
+    <string name="verification_failed">Verification failed</string>
+
+    <string name="send">发送</string>
+    <string name="send_apply">发送(%1$d)</string>
+    <string name="select_image">选择图片</string>
+    <string name="avatar_editing">头像编辑</string>
+    <string name="unable_to_retrieve_selected_image">无法检索选定的图片</string>
+    <string name="scan_it">扫一扫</string>
+    <string name="album">相册</string>
+    <string name="no_qr_code_detected">未检测到二维码</string>
+    <string name="tap_to_turn_light_on">轻触照亮</string>
+    <string name="not_recognized">无法识别</string>
+    <string name="photo_grid_capture">拍一张</string>
+</resources>

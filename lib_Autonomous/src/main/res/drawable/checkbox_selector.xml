@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_checkbox_selector_20dp" android:state_checked="true" android:state_enabled="true"/>
+    <!-- 设置选中图片 -->
+    <item android:drawable="@drawable/ic_checkbox_normal_20dp" android:state_checked="false" android:state_enabled="true"/>
+    <!-- 设置未选中图片 -->
+    <item android:drawable="@drawable/ic_checkbox_enable_20dp" android:state_selected="true" />
+
+    <item android:drawable="@drawable/ic_unenable_checkbox" android:state_enabled="false" android:state_checkable="false" />
+</selector>

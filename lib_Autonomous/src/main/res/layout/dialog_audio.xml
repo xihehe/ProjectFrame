@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:voiceView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llBg"
+        android:layout_width="253dp"
+        android:layout_height="50dp"
+        android:elevation="2dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/audio_pop_selector"
+        android:orientation="horizontal">
+
+
+        <com.yumeng.libcommonview.view.recordWaveView.RecordWaveView
+            android:id="@+id/recordWaveView"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_gravity="center_vertical"
+            voiceView:waveColor="@color/basic_theme_colors"
+            android:layout_width="wrap_content"
+            voiceView:space="6dp"
+            voiceView:waveStokeWidth="3dp"
+            android:layout_height="25dp"
+            />
+
+        <Chronometer
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginRight="@dimen/dp_13"
+            android:format="%s"
+            android:lineSpacingExtra="0sp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/dp_11"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:drawableEnd="@drawable/ic_top_into"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4sp"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

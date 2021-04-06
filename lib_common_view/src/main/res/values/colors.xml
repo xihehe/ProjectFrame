@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3478F6</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#3478F6</color>
+
+
+    <color name="common_title_color">#333333</color>
+    <color name="common_base_text_color">#999999</color>
+    <color name="common_hint_text_color">#666666</color>
+
+    <color name="news_bg_color">#D1D1D1</color>
+    <color name="thumbs_up_normal_color">#999999</color>
+    <color name="thumbs_up_select_color">#FFB70B</color>
+    <color name="news_divider_color">#f2f2f2</color>
+    <color name="news_detail_comment">#f8f8f8</color>
+    <color name="news_comment_text_color">#222222</color>
+    <color name="news_comment_reply_color">#508aff</color>
+    <color name="following_normal_color">#dddddd</color>
+    <color name="news_channel_shape_color">#eeeeee</color>
+    <color name="base_ccc">#cccccc</color>
+
+    <color name="module_login_input_bg_color">#F3F3F3</color>
+
+    <color name="module_login_account_title_color">#151515</color>
+    <color name="Color_LibBase_ButtonDisabled">#77497af2</color>
+    <color name="Color_LibBase_ButtonPressedBG">#3464DA</color>
+    <color name="zhihu_item_checkCircle_borderColor">#FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="key_switch2Track">#bdbdbd</color>
+    <color name="basic_theme_colors">#54d0ac</color>
+    <color name="basic_theme_colors_blue">#007AFF</color>
+    <color name="badge_bg">#ff6379</color>
+    <color name="theme_color_green">#54d0ac</color>
+    <color name="color_DDD">#DDD</color>
+    <color name="color_999999">#999999</color>
+
+    <color name="white_50">#7Fffffff</color>
+    <color name="color_333333">#333333</color>
+    <color name="black">#000000</color>
+    <color name="default_indexBar_textColor">#8c8c8c</color>
+    <color name="default_indexBar_selectedTextColor">#f33737</color>
+    <drawable name="dafault_indexBar_background">@android:color/transparent</drawable>
+</resources>
