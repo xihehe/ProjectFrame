@@ -142,3 +142,57 @@ Http使用
             val tttt2 = Preference<Long>().getValue("tttt", 0)
 	    
 	    
+扫码
+	 RxPermissions(this).request(Manifest.permission.CAMERA)
+                .subscribe { aBoolean ->
+                    if (aBoolean) {
+                        QRCodeScanActivity.start(this, true)
+                    }
+                }
+
+相册选取
+	
+	 RxPermissions(this).request(
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+            )
+                ?.subscribe { aBoolean ->
+                    //权限已经开启   enableCrop:是否裁剪
+                    if (aBoolean == true) {
+
+                        Matisse.from(this)
+                            .choose(MimeType.ofAll(), false)
+                            .countable(false)
+                            .maxOriginalSize(10 * 1024 * 1024)//最大设置10M每张
+                            .originalEnable(true)
+                            .theme(R.style.Matisse_Zhihu)
+                            .maxSelectable(9)
+                            .imageEngine(GlideEngine())
+                            .forResult(REQUEST_CODE_CHOOSE)
+                    }
+                }
+
+区号跳转选择
+		startKtxActivityForResult<TelephoneCodeActivity>(BASE_REQUEST_CODE)
+	
+	
+EventBus使用
+		
+	    发送
+		EventBus.getDefault().post(MessageChatEvent("111111","22222").apply {
+                putValue("a","aaaaa")
+                putValue("b","bbbbb")
+                putValue("c",TestEventModels("lili","25"))
+                //putValue("d", TestEventModelp("bibi","26"))
+            	})
+	    
+	    接收
+
+	    val message = event as MessageChatEvent
+            val content = "msg:${message.target}  ${message.behavior} ${message.getData("a","")}  ${message.getData("b", "")}"
+            val content2 = "name:${message.getData("c",TestEventModels()).name}  age: ${message.getData("c",TestEventModels()).age}"
+            //val content3 = "name:${message.getData("d",TestEventModelp()).nameP}  age: ${message.getData("d",TestEventModelp()).ageP}"
+            LogUtils.e("test", "showEvent :$content  $content2  ")//$content3
+
+
+
