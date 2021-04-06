@@ -1,11 +1,13 @@
 # ProjectFrame
 
-lib_base 用来存放 一些图片选择 号码选择 扫一扫 这种通用的Activity
-lic_common 用来存放公用的工具
-lib_common_view 用来存放公共的view 以及 一些Activity 这类的
-lib_net 网络框架
-lib_common 第三方现在都放在这里，还有一些没放，根据需要自己添加
-集成关系 是 lib_common -> lib_commonview -> lib_net -> lib_base - > lib_Autonomous
+使用方法
+
+	lib_base 用来存放 一些图片选择 号码选择 扫一扫 这种通用的Activity
+	lic_common 用来存放公用的工具
+	lib_common_view 用来存放公共的view 以及 一些Activity 这类的
+	lib_net 网络框架
+	lib_common 第三方现在都放在这里，还有一些没放，根据需要自己添加
+	集成关系 是 lib_common -> lib_commonview -> lib_net -> lib_base - > lib_Autonomous
 
 本框开发模式为MVVM模式
 	
