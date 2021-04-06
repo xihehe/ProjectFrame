@@ -194,5 +194,6 @@ EventBus使用
             //val content3 = "name:${message.getData("d",TestEventModelp()).nameP}  age: ${message.getData("d",TestEventModelp()).ageP}"
             LogUtils.e("test", "showEvent :$content  $content2  ")//$content3
 
+等等，还有很多工具，不一一介绍了，代码就在这，随便看
 
 
