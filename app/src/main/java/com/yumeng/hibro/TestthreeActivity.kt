@@ -8,13 +8,14 @@ import com.yumeng.libcommon.event.MessageEvent
 import com.yumeng.libcommon.manage.ActivityManage
 import com.yumeng.libcommon.utils.LogUtils
 import com.yumeng.libcommonview.activity.CommonToolbarActivity
+import com.yumeng.libcommonview.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_three.*
 
-class TestthreeActivity : CommonToolbarActivity() {
+class TestthreeActivity : BaseActivity() {
 
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_three)
     }
 
